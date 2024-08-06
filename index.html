@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <title>PUP Kiosk</title>
+</head>
+<body id="contents">
+    <main>
+        <img src="assets/pupmap.png" alt="PUP Sta. Mesa Main Campus Map" usemap="#pupstamesacampus" width="1000" class="map-nav"/>
+        <map name="pupstamesacampus">
+            <area shape="poly" alt="Pasig River" href="#" coords="0,0,40,0,100,91,207,434,267,598,0,603" 
+            onmouseover = "placeInfo('assets/pasig river.jpg', 'Pasig River', 'The Pasig River is a water body in the Philippines that connects Laguna de Bay to Manila Bay.')" onmouseout = "removeSceneryBox()">
+            <area shape="poly" alt="Linear Park" href="#" coords="252,540,213,428,111,109,116,105,218,420,283,529" 
+            onmouseover = "placeInfo('assets/linearpark.jpg', 'Linear Park', 'Another hang-out place in the campus, where students are able to rest while on break.')" onmouseout = "removeSceneryBox()">
+            <area shape="poly" alt="Printing Press Building" href="#" coords="84,50,98,42,117,72,105,80" 
+            onmouseover = "placeInfo('assets/printingpress.jpg', 'Printing Press Building', 'The Printing Press Building is the university publishing house, where the university newspaper are produced.')" onmouseout = "removeSceneryBox()">
+            <area shape="poly" alt="Ninoy Aquino Library and Learning Resources Center" href="#" coords="394,222,320,26,361,14,389,93,461,67,475,103,404,135,430,209" 
+            onmouseover = "placeInfo('assets/ninoyaquinolib.jpg', 'Ninoy Aquino Library and Learning Resources Center', 'The NALLRC is the main library and academic repository of PUP.')" onmouseout = "removeSceneryBox()">
+            <area shape="poly" alt="Swimming Pool" href="#" coords="560,46,558,89,654,93,656,54" 
+            onmouseover = "placeInfo('assets/pool.jpg', 'Swimming Pool', 'An Olympic-sized pool for students with swimming classes.')" onmouseout = "removeSceneryBox()">
+            <area shape="poly" alt="Outdoor Basketball and Volleyball Court" href="#" coords="616,128,703,134,702,189,611,184" 
+            onmouseover = "placeInfo('assets/basketballcourt.jpg', 'Outdoor Basketball and Volleyball Court', 'An outside court that caters to both, Basketball and Volleyball.')" onmouseout = "removeSceneryBox()">
+            <area shape="poly" alt="Lagoon" href="#" coords="363,303,415,290,447,258,464,214,481,198,485,169,469,153,449,157,440,173,440,214,417,222,398,230,394,265,385,283,363,287" 
+            onmouseover = "placeInfo('assets/lagoon.jpg', 'Lagoon', 'The lagoon is a beloved gathering spot on campus, cherished by PUPians for relaxation and socializing.')" onmouseout = "removeSceneryBox()">
+            <area shape="poly" alt="Amphitheater" href="#" coords="366,310,387,335,421,333,411,309,387,303" 
+            onmouseover = "placeInfo('assets/ampitheater.jpg', 'Ampitheater', 'A venue, where important events in the university are usually held.')" onmouseout = "removeSceneryBox()">
+            <area shape="circle" alt="Mabini Monument PUP Obelisk" href="#" coords="579,227,21" 
+            onmouseover = "placeInfo('assets/obelisk.jpg', 'Mabini Monument PUP Obelisk', 'Tribute to Apolinario Mabini, epitomizing public enlightenment and the core values of university.')" onmouseout = "removeSceneryBox()">
+            <area shape="poly" alt="Freedom Park" href="#" coords="575,338,558,312,590,300,564,363,547,373,528,336,514,315,529,296,553,273,603,273,590,299,531,327,549,353" 
+            onmouseover = "placeInfo('assets/freedom.jpg', 'Freedom Park', 'Open space where individuals gather and rest.')" onmouseout = "removeSceneryBox()">
+            <area shape="circle" alt="Chapel" href="#" coords="524,495,67" 
+            onmouseover = "placeInfo('assets/chapel.jpg','Interfaith Chapel','Place of worship and spiritual reflection')" onmouseout = "removeSceneryBox()">
+            <area shape="poly" alt="Canteen" href="#" coords="241,256,228,280,214,273,196,303,244,329,261,305,256,301,272,273" 
+            onmouseover = "placeInfo('assets/canteen.jpg','Student Canteen','The Student Canteen is a hub where students gather for meals and social interaction.')" onmouseout = "removeSceneryBox()">
+            <area shape="poly" alt="Charlie" href="#" coords="188,163,167,201,278,265,299,230" 
+            onmouseover = "placeInfo('assets/charlie.jpg','Charlie del Rosario Building','A memento for the late professor Charlie del Rosario who went missing during the Marcos Regime.')" onmouseout = "removeSceneryBox()">
+            <area shape="circle" alt="MainBG" href="#" coords="397,421,45" 
+            onmouseover = "placeInfo('assets/mainBG.jpg','Campus Main Building','This is where Tertiary education is conducted within the campus.')" onmouseout = "removeSceneryBox()">
+            <area shape="poly" alt="North" href="#" coords="439,368,515,324,544,372,468,414" 
+            onmouseover = "placeInfo('assets/north.jpg','North Wing','North side of the Campus Main Building.')" onmouseout = "removeSceneryBox()">
+            <area shape="poly" alt="South" href="#" coords="243,431,291,401,360,520,312,552" 
+            onmouseover = "placeInfo('assets/south.jpg','South Wing','South side of the Campus Main Building.')" onmouseout = "removeSceneryBox()">
+            <area shape="poly" alt="East" href="#" coords="366,486,430,487,427,574,366,578" 
+            onmouseover = "placeInfo('assets/east.jpg','East Wing','East side of the Campus Main Building.')" onmouseout = "removeSceneryBox()">
+            <area shape="poly" alt="West" href="#" coords="251,370,281,320,353,364,324,414" 
+            onmouseover = "placeInfo('assets/west.jpg','West Wing','West side of the Campus Main Building.')" onmouseout = "removeSceneryBox()">
+            <area shape="circle" alt="Flag" href="#" coords="551,332,13" 
+            onmouseover = "placeInfo('assets/flagpole.jpg','Flagpole','')" onmouseout = "removeSceneryBox()">
+            <area shape="poly" alt="Grandstand" href="#" coords="638,384,684,323,711,337,668,402" 
+            onmouseover = "placeInfo('assets/grandstand.jpg','Grandstand','Seating area for spectators')" onmouseout = "removeSceneryBox()">
+            <area shape="poly" alt="Gym" href="#" coords="684,28,806,37,804,113,680,104" 
+            onmouseover = "placeInfo('assets/gym.jpg','Gymnasium','Venue for physical exercise and sports activities.')" onmouseout = "removeSceneryBox()">
+            <area shape="poly" alt="Laboratory" href="#" coords="187,16,124,113,311,230,324,208,268,62" 
+            onmouseover = "placeInfo('assets/laboratoryhigh.jpg','Laboratory High School','This is where Secondary education is conducted')" onmouseout = "removeSceneryBox()">
+            <area shape="rect" alt="Mural" href="#" coords="879,249,915,266" 
+            onmouseover = "placeInfo('assets/mural.jpg','Brass Mural Sculpture','It depicts the purposeful growth of the Filipino Youth. It also signifies the role and responsibility of the youth in progress and development of the nation.')" onmouseout = "removeSceneryBox()">
+            <area shape="rect" alt="Nutrition" href="#" coords="433,572,589,599" 
+            onmouseover = "placeInfo('assets/nutrition_bldg.jpg','Nutrition and Food Science Building','')" onmouseout = "removeSceneryBox()">
+            <area shape="poly" alt="Oval" href="#" coords="650,460,752,317,793,296,827,296,860,312,883,342,889,376,878,412,778,548,755,566,726,575,686,568,655,541,642,501" 
+            onmouseover = "placeInfo('assets/oval.jpg','Track and Football Oval','Where athletic events occur')" onmouseout = "removeSceneryBox()">
+            <area shape="rect" alt="Waterpump" href="#" coords="274,2,323,29" 
+            onmouseover = "placeInfo('assets/waterpump.jpg','Water Pump Facility','')" onmouseout = "removeSceneryBox()">
+            <area shape="circle" alt="Overhead" href="#" coords="311,71,13" 
+            onmouseover = "placeInfo('assets/overheadwater.jpg','Overhead Water','')" onmouseout = "removeSceneryBox()">
+            <area shape="rect" alt="Pylon" href="#" coords="872,202,903,235" 
+            onmouseover = "placeInfo('assets/pylon.jpg','Pylon','')" onmouseout = "removeSceneryBox()">
+            <area shape="poly" alt="Tennis" href="#" coords="720,132,800,139,797,210,716,207" 
+            onmouseover = "placeInfo('assets/tennis.jpg','Tennis','')" onmouseout = "removeSceneryBox()">
+          </map>
+        <span id="place-display"></span>
+    </main>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
